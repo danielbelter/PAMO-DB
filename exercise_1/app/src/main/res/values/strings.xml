@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">exercise_1</string>
+    <string name="weightText">Waga(kg):</string>
+    <string name="heightTextView">Wzrost(cm):</string>
+    <string name="bmiTextView">BMI:</string>
+    <string name="calculateButtonText">Przelicz</string>
+</resources>
