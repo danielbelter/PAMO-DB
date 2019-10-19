@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">exercise_2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Kalkulator</string>
+    <string name="title_notifications">Rekomendacje</string>
+    <string name="welcome_message">Witaj w aplikacji KALKULATOR BMI</string>
+    <string name="weightText">Waga(kg):</string>
+    <string name="heightTextView">Wzrost(cm):</string>
+    <string name="bmiTextView">BMI:</string>
+    <string name="calculateButtonText">Przelicz</string>
+    <string name="recom_plecView">Wybierz płeć:</string>
+    <string name="RadioButton_women">Kobieta</string>
+    <string name="RadioButton_men">Mezczyzna</string>
+    <string name="recom_age">Wiek</string>
+    <string name="recipe2">Wymieszać jajka, żółtka, śmietanę i przyprawy. Wraz z masłem przełożyć do małego naczynia, które zmieści się w większym. Gotować na parze cały czas mieszając drewnianą łyżką. Kiedy jajka zaczną się ścinać dodać koperek/szczypiorek. Gotować do uzyskania ulubionej konsystencji. Na ciepłą położyć kawior. Podawać z chlebem.</string>
+    <string name="recipe3">Mąkę wsypać do miski, dodać jajka, mleko, wodę i sól. Zmiksować na gładkie ciasto. Dodać roztopione masło lub olej roślinny i razem zmiksować (lub wykorzystać tłuszcz do smarowania patelni przed smażeniem każdego naleśnika).
+Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np. naleśnikowej. Przewrócić na drugą stronę gdy spód naleśnika będzie już ładnie zrumieniony i ścięty.</string>
+    <string name="recipe4">* Muszlę makaronowe gotujemy w osolonej wodzie z dodatkiem oleju, według przepisu na opakowaniu, odcedzamy,  studzimy i wypełniamy sałatką. Do czasu podania przechowujemy w lodówce przykryte folią spożywczą aby nie obeschły </string>
+    <string name="recipe1">Krok 1 Tak więc zaczynamy nasze gotowanie. Na patelnie dajemy ok. 3 łyżki oleju i mięso mielone. Przyprawiamy je papryką słodka i ostrą (nie za dużo) pieprz oraz rosołek Winiary. Wszystko podlewamy odrobiną wody. Krok 2 Następnie blenderujemy bądź siekamy na bardzo drobno cebulę i czosnek i dodajemy do mięsa. Teraz czas na pomidorki. Ja obrałam je ze skórki i pokroiłam. Następnie dajemy do osobnego garnka i podlewamy ok 1/2 szklanki wody. Pomidory albo zgniatamy albo blenderujemy i solimy. Gdy się zagotują zbieramy tzw. szumowinę, a następnie dodajemy do mięsa. Moje pomidorki były bardzo słodkie i łagodne więc do mięsa dodałam jeszcze trochę ketchupu pikantnego. Krok 3 W międzyczasie gotujemy osoloną wodę z 2 łyżkami oliwy na makaron. Po zagotowaniu się wody dodajemy makaron i gotujemy ok 20 minut. Następnie makaron przelewamy zimną wodą czyli hartujemy. Makaron wykładamy na talerz i dajemy mięso z sosem I gotowe nic tylko zajadać. SMACZNEGO!!!</string>
+</resources>
