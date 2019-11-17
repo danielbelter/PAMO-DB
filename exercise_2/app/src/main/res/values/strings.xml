@@ -3,7 +3,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Kalkulator</string>
     <string name="title_notifications">Rekomendacje</string>
-    <string name="welcome_message">Witaj w aplikacji KALKULATOR BMI</string>
+    <string name="welcome_message">Sprawdz swój progres na wykresie</string>
     <string name="weightText">Waga(kg):</string>
     <string name="heightTextView">Wzrost(cm):</string>
     <string name="bmiTextView">BMI:</string>
@@ -17,4 +17,6 @@
 Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np. naleśnikowej. Przewrócić na drugą stronę gdy spód naleśnika będzie już ładnie zrumieniony i ścięty.</string>
     <string name="recipe4">* Muszlę makaronowe gotujemy w osolonej wodzie z dodatkiem oleju, według przepisu na opakowaniu, odcedzamy,  studzimy i wypełniamy sałatką. Do czasu podania przechowujemy w lodówce przykryte folią spożywczą aby nie obeschły </string>
     <string name="recipe1">Krok 1 Tak więc zaczynamy nasze gotowanie. Na patelnie dajemy ok. 3 łyżki oleju i mięso mielone. Przyprawiamy je papryką słodka i ostrą (nie za dużo) pieprz oraz rosołek Winiary. Wszystko podlewamy odrobiną wody. Krok 2 Następnie blenderujemy bądź siekamy na bardzo drobno cebulę i czosnek i dodajemy do mięsa. Teraz czas na pomidorki. Ja obrałam je ze skórki i pokroiłam. Następnie dajemy do osobnego garnka i podlewamy ok 1/2 szklanki wody. Pomidory albo zgniatamy albo blenderujemy i solimy. Gdy się zagotują zbieramy tzw. szumowinę, a następnie dodajemy do mięsa. Moje pomidorki były bardzo słodkie i łagodne więc do mięsa dodałam jeszcze trochę ketchupu pikantnego. Krok 3 W międzyczasie gotujemy osoloną wodę z 2 łyżkami oliwy na makaron. Po zagotowaniu się wody dodajemy makaron i gotujemy ok 20 minut. Następnie makaron przelewamy zimną wodą czyli hartujemy. Makaron wykładamy na talerz i dajemy mięso z sosem I gotowe nic tylko zajadać. SMACZNEGO!!!</string>
+    <string name="Wykres" />
+    <string name="bt_activity_text">Wykres</string>
 </resources>

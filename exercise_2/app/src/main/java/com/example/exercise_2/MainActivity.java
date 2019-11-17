@@ -1,10 +1,10 @@
 package com.example.exercise_2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.support.annotation.NonNull;
-import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -17,8 +17,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button calculateButton;
-    private EditText weight, height, age;
+    private Button calculateButton, activityChanger, quizButton;
+    private EditText weight, height, age, q1, q2, q3, q4;
     private TextView bmi, result, welcomeMessage, kebab;
 
 
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     homeLayout.setVisibility(View.INVISIBLE);
+                    findViewById(R.id.bt_activity_changer);
                     bmiCalculatorLayout.setVisibility(View.VISIBLE);
                     recomendationLayout.setVisibility(View.INVISIBLE);
                     return true;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     height = findViewById(R.id.heightText4);
                     result = findViewById(R.id.recom_result);
                     age = findViewById(R.id.heightText5);
+
                     scrollView.setVisibility(View.INVISIBLE);
                     calculateButton = calculateButton.findViewById(R.id.caluculateButton);
                     radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
@@ -101,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
+
         mTextMessage = findViewById(R.id.message);
         homeLayout = findViewById(R.id.homeLayout);
         recomendationLayout = findViewById(R.id.recomendation_layout);
@@ -111,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         kebab = findViewById(R.id.recipe4);
         kebabImg = findViewById(R.id.imageView4);
 
-
         welcomeMessage = findViewById(R.id.welcome_message_textView);
         calculateButton = findViewById(R.id.caluculateButton);
         weight = findViewById(R.id.weightText);
@@ -119,7 +121,12 @@ public class MainActivity extends AppCompatActivity {
         bmi = findViewById(R.id.bmiText);
         result = findViewById(R.id.scaleText);
         scrollView = findViewById(R.id.scrollview);
-
+        activityChanger = findViewById(R.id.bt_activity_changer);
+        quizButton = findViewById(R.id.bt_quiz);
+        q1 = findViewById(R.id.styczen_text_id);
+        q2 = findViewById(R.id.luty_text_id);
+        q3 = findViewById(R.id.marzec_text_id);
+        q4 = findViewById(R.id.kwiecien_text_id);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         calculateButton.setOnClickListener(new View.OnClickListener() {
@@ -138,8 +145,23 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        activityChanger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                launchActivity();
+            }
+        });
+
+        quizButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startQuiz();
+            }
+        });
     }
+
 
     private double calculate(double weight, double height, double age) {
         double val = 0;
@@ -149,5 +171,20 @@ public class MainActivity extends AppCompatActivity {
             val = ((10 * weight) + (height * 6.25) - (5 * age) + 5);
         }
         return val;
+    }
+
+    private void launchActivity() {
+
+        Intent intent = new Intent(this, ChartActivity.class);
+        intent.putExtra("q1", q1.getText().toString());
+        intent.putExtra("q2", q2.getText().toString());
+        intent.putExtra("q3", q3.getText().toString());
+        intent.putExtra("q4", q4.getText().toString());
+        startActivity(intent);
+    }
+
+    private void startQuiz() {
+        Intent intent = new Intent(this, QuizActivity.class);
+        startActivity(intent);
     }
 }
